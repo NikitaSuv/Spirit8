@@ -1,0 +1,29 @@
+/**
+ * Section: General Helpers
+ */
+
+// Mixin: General transition
+
+@mixin general-transition() {
+	@include media-breakpoint-up(md) {
+		transition: all .3s ease !important;
+	}
+}
+
+// Mixin: Fix for scroll
+
+@mixin scrolled {
+	overflow-scrolling: touch;
+	transform: translateZ(0px);
+}
+
+// Mixin: Hide Scroll
+
+@mixin hide-scroll {
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+	
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

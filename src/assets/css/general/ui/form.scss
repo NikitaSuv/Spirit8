@@ -1,0 +1,12 @@
+&.form-field {
+	label, .label {
+		cursor: pointer;
+		user-select: none;
+	}
+	
+	input, select, textarea {
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+}
